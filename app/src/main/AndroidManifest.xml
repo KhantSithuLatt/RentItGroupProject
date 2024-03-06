@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RentIt"
+        tools:targetApi="31">
+        <activity
+            android:name=".Order_Admin_View"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.twomode$Home_page"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Admin_homepage"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Admin_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.sign_up_admin"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".activity.User_profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.user_login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.twomode"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddingCar"
+            android:exported="false" />
+        <activity
+            android:name=".activity.dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CarDetialPage1"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SplashScreen"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

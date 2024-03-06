@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Admin_login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="211dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="cursive"
+        android:text="Rent It!"
+        android:textAlignment="center"
+        android:textColor="#B72626"
+        android:textSize="60sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="357dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="casual"
+        android:text="Log In to Your Account (Admin Mode)"
+        android:textColor="#0E0101"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="327dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="32dp"
+        android:hint="Username"
+        android:textColorHint="#2B1414"
+        app:hintTextColor="#251111"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textEmailAddress"
+            android:textColorHint="#060606"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="327dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="40dp"
+        android:hint="Password"
+        android:textColorHint="#0A0202"
+        app:hintTextColor="#523030"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0E0000"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Log_in_button_admin"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:ellipsize="none"
+        android:fontFamily="sans-serif"
+        android:text="Log In"
+        android:textColor="#FBF7F7"
+        android:textSize="20sp"
+        app:cornerRadius="12dp"
+        app:iconSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:shadowColor="#EE4D4D"
+        android:text="Don't have an account? Request an Admin"
+        android:textColor="#0E0101"
+        android:textColorHint="#090202"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Log_in_button_admin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
